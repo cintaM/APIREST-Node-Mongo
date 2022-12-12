@@ -8,10 +8,9 @@ import authRouter from './routes/auth.route.js';
 
 const app = express();
 
-// app.get('/', (req, res) => {res.json({ok: true})});
 app.use(express.json())
 app.use('/api/v1/', authRouter )
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 
 app.listen(PORT,()=> console.log('💕💕💕'));
